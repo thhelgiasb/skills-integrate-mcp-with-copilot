@@ -22,10 +22,104 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
 }
 
 header h1 {
   margin-bottom: 10px;
+}
+
+/* Authentication styles */
+#auth-section {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.user-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.user-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.auth-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+  z-index: 1000;
+}
+
+.login-form, .user-info {
+  padding: 20px;
+  color: #333;
+}
+
+.login-form h4 {
+  margin-bottom: 15px;
+  color: #1a237e;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #3949ab;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-info p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#logout-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#logout-btn:hover {
+  background-color: #f44336;
 }
 
 main {
@@ -190,6 +284,19 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.notice {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.notice strong {
+  color: #1a237e;
 }
 
 footer {
